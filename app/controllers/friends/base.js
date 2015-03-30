@@ -20,7 +20,7 @@ export default Ember.Controller.extend({
         this.get("model").save().then(function(friend) {
           _this.transitionToRoute("friends.show", friend);
         }, function() {
-          this.set("errorMessage", "There was a problem with the backend")});
+          this.set("errorMessage", "There was a problem with the backend");});
       } else {
         this.set("errorMessage", "You have to fill all the fields");
       }
